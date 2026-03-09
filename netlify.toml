@@ -8,4 +8,4 @@
 
   # The directory that contains the deploy-ready HTML files and assets
   # (Relative to the base directory)
-  publish = ".next"
+  publish = "out"
