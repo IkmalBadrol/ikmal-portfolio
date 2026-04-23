@@ -4,6 +4,7 @@ export type ComponentItem = {
     description: string;
     href: string;
     tags: string[];
+    image?: string;
 };
 
 export const componentsData: ComponentItem[] = [

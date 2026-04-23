@@ -12,6 +12,16 @@ export function ShowcaseCard({ item }: { item: ComponentItem }) {
             whileTap={{ scale: 0.98 }}
             className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8 shadow-sm transition-all hover:shadow-xl min-h-[300px]"
         >
+            {item.image && (
+                <div className="z-10 mb-6 -mx-8 -mt-8 h-52 overflow-hidden bg-zinc-950">
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="h-full w-full object-contain"
+                    />
+                </div>
+            )}
+
             <div className="z-10 flex flex-col gap-4">
                 <h3 className="text-2xl font-bold tracking-tight text-zinc-50">
                     {item.title}

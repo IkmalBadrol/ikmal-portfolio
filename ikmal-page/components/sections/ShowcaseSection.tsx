@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { componentsData } from "@/lib/data/components";
-import { ShowcaseCard } from "@/components/ui/ShowcaseCard";
+import { ShowcaseCard } from '@/components/ui';
 
 export function ShowcaseSection() {
     return (

@@ -8,9 +8,7 @@ import {
   type TargetAndTransition
 } from 'motion/react';
 
-function cn(...classes: (string | undefined | null | boolean)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
+import { cn } from '@/lib/utils';
 
 export interface RotatingTextRef {
   next: () => void;
@@ -180,7 +178,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
     return (
       <motion.span
-        className={cn('flex flex-wrap whitespace-pre-wrap relative font-bold', mainClassName)}
+        className={cn('inline-flex flex-wrap whitespace-pre-wrap relative font-bold', mainClassName)}
         {...rest}
         layout
         transition={transition}
